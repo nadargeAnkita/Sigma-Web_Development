@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        
+        /* Element Selector */
+        
+        div{
+            background-color: pink;
+        }
+        
+        /* Class Selector */
+        
+        .violet{
+            background-color: violet;
+        }
+        
+        /* Id Selector */
+        
+        #green{
+            background-color: green;
+        }
+        
+        /* Child Selector */
+        
+        div > p{
+            color: red;
+            background-color: aqua;
+        }
+        div > article > p{
+           background-color: brown;
+        }
+        
+        /* Descendent Selector */
+        
+        div p{
+            color:bisque;
+            background-color: blue;
+        }
+        
+        /* Universal Selector */
+        
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Pseudo Selector */
+
+        a:visited{
+            color: black;
+        }
+        a:link{
+            color: pink;
+        }
+        a:active{
+            background-color: red;
+        }
+        a:hover{
+            background-color: yellow;
+        }
+        p:first-child{
+            background-color: teal;
+        }
+
+    </style>
+</head>
+<body>
+    <main class="one">
+        <p>I am First</p>
+        <p>I am Second</p>
+    </main>
+    <div class="violet">
+        I am a Div
+        
+    </div>
+    <div>
+        I am also a Div
+    </div>
+    <div id="green">
+        I am another Div
+    </div>
+    <div>
+        <p>
+            I am a Para Inside Div
+        </p>
+    </div>
+    <div>
+        <article>
+            <p>I am Paragraph</p>
+        </article>
+    </div>
+    <div>
+        <p>
+            I am a Para Inside Div
+        </p>
+    </div>
+    <a href="https://www.google.com">GOOGLE</a>
+    <a href="https://www.facebook.com">FACEBOOK</a>
+</body>
+</html>
