@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables</title>
+    <style>
+
+        :root{
+            --color:rgb(189, 136, 221);
+            --seccolor:rgb(225, 141, 199);
+            --defpad: 23px;
+            --defop: 0.2;
+            
+        }
+        .nav {
+            background-color: var(--color);
+        }
+
+        .container {
+            background-color: var(--seccolor);
+        }
+
+        ul li {
+            list-style: none;
+            padding: var(--defpad);
+            border: 5px solid var(--seccolor);
+            /* opacity: var(--defop); */
+        }
+
+        ul {
+            display: flex;
+        }
+
+        ul li:first-child{
+            --color:rgb(108, 211, 219);
+            background-color: var(--color);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    <div class="container">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, dolores iusto? Distinctio, eligendi dolorum.
+        Dicta suscipit debitis delectus. At, tempora doloremque! Blanditiis, excepturi quam sit animi suscipit quasi
+        harum vitae saepe necessitatibus id velit ea rerum? Veniam ipsum facere impedit! Dolores odio impedit n
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis architecto a molestiae voluptatum nostrum beatae non eveniet animi quae qui perspiciatis velit odio exercitationem voluptatem obcaecati saepe mollitia consequuntur tenetur recusandae, dignissimos voluptatibus repellendus culpa adipisci iste! Quia ullam vel laborum placeat ducimus. Obcaecati quasi ea nemo quam aliquam, eaque dolores tempore similique labore natus accusamus aperiam. Dolores totam id nam illum quo cumque reprehenderit odio dignissimos officiis explicabo similique, iste iusto quod facere. Modi harum eius sequi, neque fugiat facere nostrum dicta nesciunt rerum deserunt voluptatibus asperiores porro. Et ducimus delectus consectetur magnam eius dolor ipsum deserunt quisquam officiis quasi enim, praesentium tempora reprehenderit consequuntur consequatur quos incidunt! Necessitatibus nobis rerum expedita explicabo doloribus perspiciatis quaerat, officiis voluptatem, a eos, sint omnis esse sequi. Facilis velit nisi, ratione perspiciatis laborum officiis explicabo, debitis nobis ad incidunt minus optio reprehenderit culpa sapiente suscipit eius quasi? Quos eaque aspernatur laudantium. Dignissimos necessitatibus veniam rerum odio porro corrupti, accusamus, et labore, consectetur perspiciatis excepturi. Impedit ex ad vel veniam esse facilis tempore quis provident. Expedita vel explicabo officia iste provident ratione, molestias nulla unde sint nihil iusto rem iure velit fugiat hic fugit repudiandae voluptate minima autem ea optio quo. Perspiciatis fugiat distinctio ut ullam voluptate incidunt impedit a beatae, voluptates aperiam eum quo, cupiditate dicta iste, eligendi optio laborum nemo inventore. Dignissimos quas quis ab odio corrupti hic commodi nisi dolore, laboriosam reprehenderit magnam impedit minus adipisci alias magni maiores numquam aliquid eum? Asperiores libero laboriosam voluptatum quaerat mollitia doloremque pariatur sit ipsa necessitatibus in, quidem officia facere voluptas dicta distinctio modi fuga laudantium. Expedita, aliquam. Cum aspernatur adipisci commodi voluptas doloremque in totam ipsam assumenda earum a repudiandae, laborum ad dicta accusantium rem qui odio quia magnam est laudantium. Repellat, inventore vitae! Pariatur beatae doloribus velit magni debitis et harum dolorem nostrum quisquam odio natus placeat quam nobis quia libero, nisi exercitationem tenetur optio. Reprehenderit, labore dolore nemo ex corrupti, voluptatem quam eum consectetur veritatis vitae aspernatur velit modi perferendis voluptas eius facilis quod. Quibusdam inventore, repellat ratione natus dolores voluptas harum animi cum aliquam mollitia, molestias accusantium magni unde cupiditate minus maxime quasi nobis est necessitatibus facere et laborum. Consequuntur, fugit distinctio quas esse temporibus minus, illo numquam harum accusamus placeat minima e sed eius porro illum, assumenda officiis!
+    </div>
+</body>
+
+</html>
